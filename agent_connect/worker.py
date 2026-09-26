@@ -137,11 +137,11 @@ def main() -> None:
             try:
                 process_one(task_path, adapter, repo, results_dir)
             except Exception as e:  # noqa: BLE001 — never die on one bad task
-                (results_dir / f"{task_path.stem}.txt").write_text(
+                (results_dir / task_path.stem}.txt").write_text(
                     f"agent-connect: worker error: {e}\n"
                 )
             seen.add(task_path.name)
-        time.sleep(poll)
+   (poll)
 
 
 if __name__ == "__main__":
