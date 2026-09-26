@@ -2,7 +2,7 @@
 
 Watches a workspace `tasks/` dir (populated by the AG2 Space relay client),
 runs the configured agent adapter on each task, and writes `results/`. The relay
-client handles all Matrix transport + posting back — this only turns a task into
+client handles all Matrix transport + posting back — this only turns a task intoagent_connect/worker.py
 an agent run.
 
 Env:
